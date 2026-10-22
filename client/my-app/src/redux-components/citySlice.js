@@ -1,10 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
+import Cookies from 'js-cookie'
 
 const citySlice = createSlice({
 
     name : 'citySlice',
     initialState:{
-        city : document.cookie.city
+        city : Cookies.get('city')
     },
     reducers:{
 
