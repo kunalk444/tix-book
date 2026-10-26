@@ -13,7 +13,7 @@ export  const apiCalls = async(reqType , reqBody , destination) => {
     });
 
     const ans = await res.json();
-
+    console.log(ans);
     return ans;
 
 }

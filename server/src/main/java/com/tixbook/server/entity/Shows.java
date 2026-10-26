@@ -5,6 +5,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @Entity
@@ -31,7 +32,9 @@ public class Shows {
 
     private Integer startTime;
     private Integer endTime;
-    public Date showDate;
+    public LocalDate showDate;
+
+
 
     public Concerts getConcerts() {
         return concerts;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import City from './City';
 import { useSelector } from 'react-redux';
+import Movies from './Movies';
 
 function Home() {
 
@@ -14,6 +15,7 @@ function Home() {
             city == null ? <City /> : null
             
         }
+        <Movies />
     </>
   )
 }
